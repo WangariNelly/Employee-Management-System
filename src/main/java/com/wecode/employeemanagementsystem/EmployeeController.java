@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/employee")
+@RequestMapping("api/employees")
 public class EmployeeController {
     private final EmployeeService employeeService;
 
@@ -35,7 +35,7 @@ public class EmployeeController {
       return new ResponseEntity<>(newEmployee, HttpStatus.CREATED);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     public ResponseEntity<Employee> updateEmployee (@RequestBody Employee employee) {
         Employee updatedEmployee = employeeService.updateEmployee(employee);
         return new ResponseEntity<>(updatedEmployee, HttpStatus.OK);

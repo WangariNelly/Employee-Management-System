@@ -15,7 +15,7 @@ This is a Spring Boot-based Employee Management System that enables users to per
 ## **Technologies Used**
 - **Backend**: Java, Spring Boot
 - **Frontend**: Typescript, Angular
-- **Database**: MySQL/PostgreSQL(or replaceable with H2 )
+- **Database**: PostgreSQL(or replaceable with H2 )
 - **Build Tool**: Maven
 - **IDE Support**: IntelliJ IDEA.
 
@@ -54,7 +54,7 @@ cd employeemanagementsystem
   ```
 - **Using IDE**:
     1. Open the project in your IDE.
-    2. Run the `EmployeeManagerApplication` class.
+    2. Run the `EmployeemanagementsystemApplication` class.
 
 ### Access the Application
 - REST API Documentation: `http://localhost:8080/swagger-ui/` (if Swagger is enabled).
@@ -65,10 +65,11 @@ cd employeemanagementsystem
 ## **API Endpoints**
 
 ### Employee Management
-- **GET /api/employees**: Fetch all employees.
-- **POST /api/employees**: Add a new employee.
-- **PUT /api/employees/{id}**: Update an employee by ID.
-- **DELETE /api/employees/{id}**: Delete an employee by ID.
+- **GET /api/employees/all**: Fetch all employees.
+- **GET /api/employees/id**: Fetch one employee.
+- **POST /api/employees/new**: Add a new employee.
+- **PUT /api/employees/update**: Update an employee.
+- **DELETE /api/employees/delete{id}**: Delete an employee by ID.
 
 ---
 
